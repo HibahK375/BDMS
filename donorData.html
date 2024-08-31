@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Blood Donation Form</h1>
         <p>Confidential - Please answer the following questions correctly.</p>
-        <form action="/submit" method="post">
+        <form action="book_appointment.html" method="post">
 
             <div class="form-group">
                 <div class="form-question">What is your blood type?</div>
@@ -29,7 +29,7 @@
             <div class="form-group">
                 <div class="form-question">Aadhar Number</div>
                 <div class="form-answer">
-                    <input type="number" name="Aadhar" placeholder="Aadhar Number" pattern = "\d{12}" required>
+                    <input type="tel" name="Aadhar" placeholder="Aadhar Number" pattern = "\d{12}" required>
                 </div>
             </div>
 
@@ -44,7 +44,7 @@
             <div class="form-group">
                 <div class="form-question">Birth Date</div>
                 <div class="form-answer">
-                    <input type="date" name="dob" required>
+                    <input type="date" name="dob" required min="31-12-2006" placeholder="Above 18">
                 </div>
             </div>
 
@@ -178,7 +178,7 @@
             </div>
 
             <div class="form-group">
-                <button href="#" >Book Appointment</button>
+                <center><button href="#" style="transform: scale(1.2);" >Book Appointment</button></center>
             </div>
         </form>
     </div>

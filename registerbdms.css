@@ -12,6 +12,7 @@ body{
     background: url('BDMSimage2.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+    backdrop-filter: blur(3px);
 }
 .wrapper{
     border-color: #fff;
