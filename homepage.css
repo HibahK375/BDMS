@@ -1,6 +1,9 @@
 body {
     font-family: 'Roboto', Arial, sans-serif;
-    background-color: #f3f4f6;
+    background-image: url('bdms3.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
     color: #333;
     margin: 0;
     padding: 0;
@@ -51,9 +54,8 @@ header nav a {
     color: #e63946;
 }
 .hero {
-    background-color: #ffffff;
+    background: transparent;
     padding: 60px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     display: inline-block;
     margin: 50px auto;
