@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Form</title>
+    <link rel="stylesheet" href="donorData.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Donation Form</h1>
+        <p>Confidential - Please answer the following questions correctly.</p>
+        <form action="/submit" method="post">
+
+            <div class="form-group">
+                <div class="form-question">What is your blood type?</div>
+                <div class="form-answer">
+                    <div><input type="radio" name="bloodType" value="A+" required> A+</div>
+                    <div><input type="radio" name="bloodType" value="A-"> A-</div>
+                    <div><input type="radio" name="bloodType" value="B+"> B+</div>
+                    <div><input type="radio" name="bloodType" value="B-"> B-</div>
+                    <div><input type="radio" name="bloodType" value="AB+"> AB+</div>
+                    <div><input type="radio" name="bloodType" value="AB-"> AB-</div>
+                    <div><input type="radio" name="bloodType" value="O+"> O+</div>
+                    <div><input type="radio" name="bloodType" value="O-"> O-</div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Aadhar Number</div>
+                <div class="form-answer">
+                    <input type="number" name="Aadhar" placeholder="Aadhar Number" pattern = "\d{12}" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Full Name</div>
+                <div class="form-answer">
+                    <input type="text" name="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Birth Date</div>
+                <div class="form-answer">
+                    <input type="date" name="dob" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Gender</div>
+                <div class="form-answer">
+                    <input type="radio" name="gender" value="male" required> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Occupation</div>
+                <div class="form-answer">
+                    <input type="text" name="occupation" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Phone Number</div>
+                <div class="form-answer">
+                    <input type="tel" name="phone" placeholder="(000) 000-0000" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Email</div>
+                <div class="form-answer">
+                    <input type="email" name="email" placeholder="example@example.com" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Address</div>
+                <div class="form-answer">
+                    <input type="text" name="address1" placeholder="Street Address" required>
+                    <input type="text" name="address2" placeholder="Street Address Line 2">
+                    <input type="text" name="city" placeholder="City" required>
+                    <input type="text" name="state" placeholder="State / Province" required>
+                    <input type="text" name="postal" placeholder="Postal / Zip Code" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Weight</div>
+                <div class="form-answer">
+                    <input type="text" name="weight" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Pulse</div>
+                <div class="form-answer">
+                    <input type="text" name="pulse">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Hemoglobin(Hb)</div>
+                <div class="form-answer">
+                    <input type="text" name="hb">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">BP</div>
+                <div class="form-answer">
+                    <input type="text" name="bp">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">What was the last time you donated blood?</div>
+                <div class="form-answer">
+                    <input type="date" name="lastDonation">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Have you donated previously?</div>
+                <div class="form-answer">
+                    <input type="radio" name="previousDonation" value="yes"> Yes
+                    <input type="radio" name="previousDonation" value="no"> No
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">In the last six months have you had any of the following?</div>
+                <div class="form-answer">
+                    <input type="checkbox" name="procedures" value="tattooing"> Tattooing<br>
+                    <input type="checkbox" name="procedures" value="piercing"> Piercing<br>
+                    <input type="checkbox" name="procedures" value="dental"> Dental Extraction
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Do you suffer from or have suffered from any of the following diseases?</div>
+                <div class="form-answer">
+                    <input type="checkbox" name="diseases" value="heartDisease"> Heart Disease<br>
+                    <input type="checkbox" name="diseases" value="diabetes"> Diabetes<br>
+                    <input type="checkbox" name="diseases" value="std"> Sexually Transmitted Diseases<br>
+                    <input type="checkbox" name="diseases" value="lungDisease"> Lung Disease<br>
+                    <input type="checkbox" name="diseases" value="allergies"> Allergic Diseases<br>
+                    <input type="checkbox" name="diseases" value="kidneyDisease"> Kidney Disease<br>
+                    <input type="checkbox" name="diseases" value="jaundice"> Jaundice<br>
+                    <input type="checkbox" name="diseases" value="malaria"> Malaria<br>
+                    <input type="checkbox" name="diseases" value="cancer"> Cancer/Malignant Disease<br>
+                    <input type="checkbox" name="diseases" value="hepatitis"> Hepatitis B/C<br>
+                    <input type="checkbox" name="diseases" value="typhoid"> Typhoid<br>
+                    <input type="checkbox" name="diseases" value="epilepsy"> Epilepsy
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Are you taking or have you taken any of these in the past 72 hours?</div>
+                <div class="form-answer">
+                    <input type="checkbox" name="medications" value="antibiotics"> Antibiotics<br>
+                    <input type="checkbox" name="medications" value="aspirin"> Aspirin<br>
+                    <input type="checkbox" name="medications" value="vaccinations"> Vaccinations<br>
+                    <input type="checkbox" name="medications" value="dogBite"> Dog Bite Rabies Vaccine
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-question">Is there any history of surgery or blood transfusion in the past six months?</div>
+                <div class="form-answer">
+                    <input type="checkbox" name="surgery" value="major"> Major<br>
+                    <input type="checkbox" name="surgery" value="minor"> Minor<br>
+                    <input type="checkbox" name="surgery" value="bloodTransfusion"> Blood Transfusion
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
