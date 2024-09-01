@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Registration Form</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+    <div class="background">
+        <h1>Donation Appointment Booking</h1>
+        <hr>
+        <p><b>*Important Note*:-</b> Appointment booked does not confirm your donation appointment.<br>
+            Appointment will only be confirmed by the chosen hospital. Donors are adviced to check their emails regularly.</p>
+            <hr>
+    </div>
+    <div class="wrapper">
+    <form action="">
+        <div class="form-question">What is your blood type?</div>
+        <div class="form-group">
+                <div class="form-opt">
+                    <div><input type="radio" name="bloodType" value="A+" required> A+</div>
+                    <div><input type="radio" name="bloodType" value="A-"> A-</div>
+                    <div><input type="radio" name="bloodType" value="B+"> B+</div>
+                    <div><input type="radio" name="bloodType" value="B-"> B-</div>
+                    <div><input type="radio" name="bloodType" value="AB+"> AB+</div>
+                    <div><input type="radio" name="bloodType" value="AB-"> AB-</div>
+                    <div><input type="radio" name="bloodType" value="O+"> O+</div>
+                    <div><input type="radio" name="bloodType" value="O-"> O-</div>
+                </div>
+        </div>
+        <div class="form-question">Pin Code:</div>
+            <div class="form-data">
+                <input type="text" pattern="[0-9]" placeholder="Pin code" required>
+            </div>
+        <div class="form-data">
+            <input type="checkbox" required name="check">Available anytime 15 days prior to chosen date**<br>
+            <input type="checkbox" id="Select Date:" required name="check">Select date<br>
+        </div>
+        <div class="form-question">Select date:</div>
+        <div class="form-data">
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-question">Select Hospital/Donation Center:</div>
+        <div class="form-data">
+            <select id="hospital">
+                <option value="select">Select</option>
+            </select>
+        </div>
+
+        <div class="btn">
+            <button type="submit">Book Appointment</button>
+        </div>
+    </form>
+   </div>
+</body>
+</html>
