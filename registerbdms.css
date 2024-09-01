@@ -9,17 +9,16 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('BDMSimage4.jpg') no-repeat;
+    background: url('bdms4.jpg') no-repeat;
     background-size: cover;
     background-position: center;
-    backdrop-filter: blur(3px);
 }
 .wrapper{
-    border-color: #fff;
+    border-color: #150303;
     border: 2px  solid;
     width: 450px;
     background: transparent;
-    color: #fff;
+    color: #150303;
     border-radius: 20px;
     padding-left: 30px;
     padding-right: 30px;
@@ -41,21 +40,21 @@ body{
     background: transparent;
     border: none;
     outline: none;
-    border: 2px solid rgb(255,255,255);
+    border: 2px solid #150303;
     border-radius: 40px;
     font-size: 16px;
-    color: #fff;
+    color: #150303;
     padding: 20px 45px 20px 20px;
 
 }
 .input-box ::placeholder{
-    color: #fff;
+    color: #150303;
 }
 button{
     font-size: large;
     height: 45px;
     width: 100%;
-    color: #fff;
+    color: #150303;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -65,13 +64,13 @@ button{
 
 }
 .Login-link p{
-    color: #fff;
+    color: #150303;
     text-decoration: none;
     margin-bottom: 10%;
     padding-top: 20px;
 }
 .Login-link p a{
-    color: #fff;
+    color: #150303;
     font-weight: 600;
 }
 .Login-link a:hover{
