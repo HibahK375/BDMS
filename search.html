@@ -36,14 +36,14 @@
             </div>
         </nav>
     </header>
-    <div class="wrapper">
         <header class="header2">
             <img src="bdmslogo2.jpg" alt="Logo" class="logo">
             <h1 >Blood Donation Management</h1>
         </header>
         <hr>
+    <div class="wrapper">
+        <h2>Find Blood Donors</h2>
         <div class="data">
-            <h2>Find Blood Donors</h2>
             <section class="search-section">
                 <form action="backend-endpoint" method="POST">
                     <label for="blood-group">Blood Group:</label>
@@ -62,6 +62,11 @@
                 <div class="pin"> 
                     <label for="Pin Code">Pin Code:</label>
                     <input type ="tel" pattern="\d{6}" placeholder = "Pincode" style="font-size: 20px; border-radius: 4px; border-style: solid; border-color: rgb(203, 202, 202) ; border-width: thin;">
+                </div>
+                <div class="pin"> 
+                    <label for="Pin Code">Pin Code:</label>
+                    <input type="checkbox" required name="check">Hospital/ Blood Bank<br>
+                    <input type="checkbox" required name="check">Connect Directly with Donor<br>
                 </div>  
                     <button type="submit" class="search-btn" style="width: 200px; text-align: center; align-self: center;">Search</button>
                 </form>
