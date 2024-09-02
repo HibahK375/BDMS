@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Request Management</title>
+    <link rel="stylesheet" href="path/to/your/css/bootstrap.min.css">
+    <style>
+        .badge-pill {
+            border-radius: 50px;
+        }
+        .text-right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <br><br>
+    <h4 class="text-center">Blood Requested</h4><br>
+
+    <h5 class="text-center" style="color: red;"> <!-- Message goes here --> </h5><br>
+
+    <table class="table table-light table-hover table-bordered table-striped">
+        <thead class="bg-info">
+            <tr>
+                <th scope="col">Patient Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Reason</th>
+                <th scope="col">Blood Group</th>
+                <th scope="col">Unit (in ml)</th>
+                <th scope="col">Date</th>
+                <th scope="col">Status</th>
+                <th class="text-right">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Repeat this block for each blood request -->
+            <tr>
+                <td> John Doe </td>
+                <td> 45 </td>
+                <td> Surgery </td>
+                <td> B+ </td>
+                <td> 500 </td>
+                <td> 2024-09-01 </td>
+                <td> Pending </td>
+                <td class="text-right">
+                    <button class="btn btn-primary badge-pill" style="width: 100px;">
+                        <a href="link_to_approve" style="text-decoration: none; color: white;">Approve</a>
+                    </button>
+                    <button class="btn btn-danger badge-pill" style="width: 80px;">
+                        <a href="link_to_reject" style="text-decoration: none; color: white;">Reject</a>
+                    </button>
+                </td>
+            </tr>
+            <!-- End of repeat block -->
+        </tbody>
+    </table>
+
+    <!-- Message if no requests -->
+    <h5>No Blood Request By Patient / Donor!</h5>
+
+</div>
+
+</body>
+</html>

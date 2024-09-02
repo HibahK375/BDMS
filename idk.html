@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Management</title>
+    <!-- Link to Bootstrap CSS for styling and layout -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* This makes sure the form is centered */
+        .xyz {
+            display: flex;
+            justify-content: center; /* Centers the form horizontally */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Row for the first four blood groups -->
+    <div class="row justify-content-center g-3">
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <h2>A+ <i class="fas fa-tint"></i></h2>
+                    </div>
+                    <div>
+                        {{A1.unit}} <!-- Shows the number of units for A+ blood type -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <h2>B+ <i class="fas fa-tint"></i></h2>
+                    </div>
+                    <div>
+                        {{B1.unit}} <!-- Shows the number of units for B+ blood type -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <h2>O+ <i class="fas fa-tint"></i></h2>
+                    </div>
+                    <div>
+                        {{O1.unit}} <!-- Shows the number of units for O+ blood type -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <h2>AB+ <i class="fas fa-tint"></i></h2>
+                    </div>
+                    <div>
+                        {{AB1.unit}} <!-- Shows the number of units for AB+ blood type -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row for the next four blood groups -->
+    <div class="row justify-content-center g-3">
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <h2>A- <i class="fas fa-tint"></i></h2>
+                    </div>
+                    <div>
+                        {{A2.unit}} <!-- Shows the number of units for A- blood type -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <h2>B- <i class="fas fa-tint"></i></h2>
+                    </div>
+                    <div>
+                        {{B2.unit}} <!-- Shows the number of units for B- blood type -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <h2>O- <i class="fas fa-tint"></i></h2>
+                    </div>
+                    <div>
+                        {{O2.unit}} <!-- Shows the number of units for O- blood type -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-3">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <div class="blood">
+                        <h2>AB- <i class="fas fa-tint"></i></h2>
+                    </div>
+                    <div>
+                        {{AB2.unit}} <!-- Shows the number of units for AB- blood type -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <br>
+    <h3 class="text-center">Update Blood Unit</h3><br>
+
+    <!-- Form for updating blood units -->
+    <div class="xyz">
+        <form class="form-inline row justify-content-center" method="POST">
+            {% csrf_token %} <!-- Django's way of protecting forms -->
+            <div class="form-group mx-sm-3 mb-6">
+                <!-- Dropdown for selecting blood group -->
+                <select name="bloodgroup" class="form-control">
+                    <option disabled selected>Choose Blood Group</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                </select>
+            </div>
+            <div class="form-group mx-sm-3 mb-6">
+                <!-- Input box for the number of units -->
+                <input type="number" class="form-control" name="unit" placeholder="Unit">
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary mb-2">Update</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
